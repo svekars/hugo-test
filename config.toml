@@ -1,76 +1,68 @@
-baseURL = "https://svekars.github.io/"
+baseURL = "/"
+
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "blackburn"
+DefaultContentLanguage = "en"
+title = "Kubernetes Security"
+theme = "docdock"
+# themesdir = "../.."
+pygmentsCodeFences = true
+pygmentsStyle = "monokailight"
 
-author = "Your name"
-# Shown in the side menu
-copyright = "&copy; 2016. All rights reserved."
-canonifyurls = true
-paginate = 10
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
 
-[indexes]
-  tag = "tags"
-  topic = "topics"
+
+# [Languages]
+# [Languages.en]
+# title = "Kubernetes security"
+# weight = 1
+# languageName = "English"
+#
+# [Languages.fr]
+# title = "Documentation du thème docDock"
+# weight = 2
+# languageName = "Français"
+
+
+
 
 [params]
-  # Shown in the home page
-  subtitle = "A Hugo Theme"
-  brand = "Blackburn"
-  googleAnalytics = "Your Google Analytics tracking ID"
-  disqus = "Your Disqus shortname"
-  # CSS name for highlight.js
-  highlightjs = "androidstudio"
-  highlightjs_extra_languages = ["yaml"]
-  dateFormat = "02 Jan 2006, 15:04"
-  # Include any custom CSS and/or JS files
-  # (relative to /static folder)
-  custom_css = ["css/my.css"]
-  custom_js = ["js/my.js"]
+editURL = "https://github.com/svekars/hugo-test"
+showVisitedLinks = true # default is false
+themeStyle = "flex" # "original" or "flex" # default "flex"
+themeVariant = "gray" # choose theme variant "green", "gold" , "gray", "blue" (default)
+ordersectionsby = "weight" # ordersectionsby = "title"
+disableHomeIcon = false # default is false
+disableSearch = false # default is false
+disableNavChevron = false # set true to hide next/prev chevron, default is false
+highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
+menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
+enableGitInfo = true
 
-  [params.piwikAnalytics]
-    siteid = 2
-    piwikroot = "//analytics.example.com/"
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
 
-[menu]
-  # Shown in the side menu.
-  [[menu.main]]
-    name = "Home"
-    pre = "<i class='fa fa-home fa-fw'></i>"
-    weight = 1
-    identifier = "home"
-    url = "/"
-  [[menu.main]]
-    name = "Posts"
-    pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 2
-    identifier = "post"
-    url = "/post/"
-  [[menu.main]]
-    name = "About"
-    pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 3
-    identifier = "about"
-    url = "/about/"
-  [[menu.main]]
-    name = "Contact"
-    pre = "<i class='fa fa-phone fa-fw'></i>"
-    weight = 4
-    url = "/contact/"
 
-[social]
-  # Link your social networking accounts to the side menu
-  # by entering your username or ID.
+[[menu.shortcuts]]
+pre = "<h3>More</h3>"
+name = "<i class='fa fa-github'></i> <label>Github repo</label>"
+identifier = "ds"
+url = "https://github.com/svekars/hugo-test"
+weight = 10
 
-  # SNS microblogging
-  twitter = "laignas"
+# [[menu.shortcuts]]
+# name = "<i class='fa fa-cloud-download'></i> <label>Download</label>"
+# url = "https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip"
+# weight = 11
 
-  # SNS photo/video sharing
+# [[menu.shortcuts]]
+# name = "<i class='fa fa-bookmark'></i> <label>Hugo Documentation</label>"
+# identifier = "hugodoc"
+# url = "https://gohugo.io/"
+# weight = 20
 
-  # SNS career oriented
-  linkedin = "svetlana-karslioglu"
-
-  # SNS news
-
-  # Techie
-  github = "svekars"
+# [[menu.shortcuts]]
+# name = "<i class='fa fa-bullhorn'></i> <label>Credits</label>"
+# url = "/credits"
+# weight = 30

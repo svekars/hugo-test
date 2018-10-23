@@ -8,3 +8,6 @@
 	path = public
 	url = git@github.com:svekars/svekars.github.io.git
 	branch = master
+[submodule "themes/docdock"]
+	path = themes/docdock
+	url = https://github.com/vjeantet/hugo-theme-docdock.git
